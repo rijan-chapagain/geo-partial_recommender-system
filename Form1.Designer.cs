@@ -41,9 +41,10 @@
             // 
             this.splitter1.Location = new System.Drawing.Point(0, 0);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(636, 573);
+            this.splitter1.Size = new System.Drawing.Size(4744, 596);
             this.splitter1.TabIndex = 0;
             this.splitter1.TabStop = false;
+            this.splitter1.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitter1_SplitterMoved);
             // 
             // map
             // 
@@ -70,9 +71,10 @@
             this.map.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.map.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.map.ShowTileGridLines = false;
-            this.map.Size = new System.Drawing.Size(636, 573);
+            this.map.Size = new System.Drawing.Size(726, 596);
             this.map.TabIndex = 1;
             this.map.Zoom = 0D;
+            this.map.Load += new System.EventHandler(this.map_Load);
             // 
             // textLat
             // 
@@ -120,7 +122,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 573);
+            this.ClientSize = new System.Drawing.Size(992, 596);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.longitude);
             this.Controls.Add(this.latitude);
@@ -129,7 +131,7 @@
             this.Controls.Add(this.map);
             this.Controls.Add(this.splitter1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Geo-partial_Recommender";
             this.ResumeLayout(false);
             this.PerformLayout();
 
