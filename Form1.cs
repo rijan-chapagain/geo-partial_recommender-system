@@ -21,15 +21,15 @@ namespace GeoPartial_RecommenderSystem
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            map.DragButton = MouseButtons.Left;
-            map.MapProvider = GMapProviders.GoogleMap;
+            map.DragButton = MouseButtons.Right;
+            map.MapProvider = GMapProviders.BingMap;
             double latitude = Convert.ToDouble(textLat.Text);
             double longitude = Convert.ToDouble(textLong.Text);
 
             map.Position = new PointLatLng(latitude, longitude);
             map.MinZoom = 0;
             map.MaxZoom = 18;
-            map.Zoom = 5;
+            map.Zoom = 3;
         }
     }
 }
