@@ -23,7 +23,7 @@
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void btnSearch_Click(object sender, EventArgs e)
+        private void BtnSearch_Click(object sender, EventArgs e)
         {
             // handle drag on map
             map.DragButton = MouseButtons.Left;
@@ -31,8 +31,8 @@
 
 
             map.MapProvider = GMapProviders.GoogleMap;
-            double latitude = Convert.ToDouble(-32);
-            double longitude = Convert.ToDouble(115);
+            double latitude = Convert.ToDouble(-32.3473927848437);
+            double longitude = Convert.ToDouble(115.811621855803);
            /* double latitude = Convert.ToDouble(textLat.Text);
             double longitude = Convert.ToDouble(textLong.Text);*/
 
@@ -46,19 +46,19 @@
         private int X;
         private int Y;
 
-        private void map_Load_Click(object sender, EventArgs e)
+        private void Map_Load_Click(object sender, EventArgs e)
         {
             MessageBox.Show(string.Format("X: {0} Y: {1}", X, Y));
         }
 
-        private void map_Load_MouseUp(object sender, MouseEventArgs e)
+        private void Map_Load_MouseUp(object sender, MouseEventArgs e)
         {
             X = e.X;
             Y = e.Y;
         }
 
 
-        private void map_Load(object sender, EventArgs e)
+        private void Map_Load(object sender, EventArgs e)
         {
             // map Init
             // this.map.Click += new System.EventHandler(this.map_Load);
@@ -67,7 +67,7 @@
 
         }
 
-        private void splitter1_SplitterMoved(object sender, SplitterEventArgs e)
+        private void Splitter1_SplitterMoved(object sender, SplitterEventArgs e)
         {
 
         }

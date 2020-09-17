@@ -1,4 +1,7 @@
-﻿namespace GeoPartial_RecommenderSystem
+﻿using System;
+using System.Windows.Forms;
+
+namespace GeoPartial_RecommenderSystem
 {
     partial class Form1
     {
@@ -74,7 +77,7 @@
             this.map.Size = new System.Drawing.Size(726, 596);
             this.map.TabIndex = 1;
             this.map.Zoom = 0D;
-            this.map.Load += new System.EventHandler(this.map_Load);
+            this.map.Load += new System.EventHandler(this.Map_Load);
             // 
             // textLat
             // 
@@ -116,7 +119,7 @@
             this.btnSearch.TabIndex = 6;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            this.btnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
             // 
             // Form1
             // 
@@ -135,6 +138,11 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void splitter1_SplitterMoved(object sender, SplitterEventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
