@@ -8,7 +8,7 @@ using System.Xml.Linq;
 
 namespace GeoPartial_RecommenderSystem.Events
 {
-    class parseEvents
+    class ParseEvents
     {
 
         public void LoadData()
