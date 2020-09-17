@@ -1,0 +1,66 @@
+﻿<?xml version="1.0"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://www.w3.org/2001/12/soap-envelope" SOAP-ENV:encodingStyle="http://www.w3.org/2001/12/soap-encoding" >
+	<SOAP-ENV:Body xmlns:lle="http://www.xyz.org/lifelogevents" >
+		<lle:Event>
+			<lle:eventid>ID1</lle:eventid>
+			<lle:tweet>
+				<lle:text>This is some tweet in my day</lle:text>
+				<lle:location>
+					<lle:lat>999</lle:lat>
+					<lle:long>999</lle:long>
+				</lle:location>
+				<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+			</lle:tweet>
+		</lle:Event>
+		<lle:Event>
+			<lle:eventid>ID2</lle:eventid>
+			<lle:facebook-status-update>
+				<lle:text>This is some status update in my day</lle:text>
+				<lle:location>
+					<lle:lat>999</lle:lat>
+					<lle:long>999</lle:long>
+				</lle:location>
+				<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+			</lle:facebook-status-update>
+		</lle:Event>
+		<lle:Event>
+			<lle:eventid>ID3</lle:eventid>
+			<lle:photo>
+				<lle:filepath>/photos/image.jpg</lle:filepath>
+				<lle:location>
+					<lle:lat>999</lle:lat>
+					<lle:long>999</lle:long>
+				</lle:location>
+			</lle:photo>
+		</lle:Event>
+		<lle:Event>
+			<lle:eventid>ID4</lle:eventid>
+			<lle:video>
+				<lle:filepath>/videos/film.mp4</lle:filepath>
+				<lle:location>
+					<lle:lat>999</lle:lat>
+					<lle:long>999</lle:long>
+				</lle:location>
+				<lle:start-time>
+					<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+				</lle:start-time>
+				<lle:end-time>
+					<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+				</lle:end-time>
+			</lle:video>
+		</lle:Event>
+		<lle:Event>
+			<lle:eventid>ID4</lle:eventid>
+			<lle:tracklog>
+				<lle:filepath>/tracklog/track.gpx</lle:filepath>
+				<lle:data>.....</lle:data>
+				<lle:start-time>
+					<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+				</lle:start-time>
+				<lle:end-time>
+					<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+				</lle:end-time>
+			</lle:tracklog>
+		</lle:Event>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
