@@ -60,7 +60,7 @@ namespace GeoPartial_RecommenderSystem
             this.map.GrayScaleMode = false;
             this.map.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.map.LevelsKeepInMemory = 5;
-            this.map.Location = new System.Drawing.Point(0, 0);
+            this.map.Location = new System.Drawing.Point(14, 12);
             this.map.MarkersEnabled = true;
             this.map.MaxZoom = 2;
             this.map.MinZoom = 2;

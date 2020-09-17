@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoPartial-RecommenderSystem", "GeoPartial-RecommenderSystem.csproj", "{4346038D-6CA0-46B2-9902-276206AD6C20}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoPartial-RecommenderSystem", "GeoPartial-RecommenderSystem\GeoPartial-RecommenderSystem.csproj", "{4346038D-6CA0-46B2-9902-276206AD6C20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
