@@ -33,11 +33,11 @@ namespace GeoPartial_RecommenderSystem
         {
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.map = new GMap.NET.WindowsForms.GMapControl();
-            this.textLat = new System.Windows.Forms.TextBox();
-            this.textLong = new System.Windows.Forms.TextBox();
-            this.latitude = new System.Windows.Forms.Label();
-            this.longitude = new System.Windows.Forms.Label();
-            this.btnSearch = new System.Windows.Forms.Button();
+            this.textEventName = new System.Windows.Forms.TextBox();
+            this.eventName = new System.Windows.Forms.Label();
+            this.btnAddEvent = new System.Windows.Forms.Button();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.resetField = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // splitter1
@@ -60,7 +60,7 @@ namespace GeoPartial_RecommenderSystem
             this.map.GrayScaleMode = false;
             this.map.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.map.LevelsKeepInMemory = 5;
-            this.map.Location = new System.Drawing.Point(14, 12);
+            this.map.Location = new System.Drawing.Point(0, 0);
             this.map.MarkersEnabled = true;
             this.map.MaxZoom = 2;
             this.map.MinZoom = 2;
@@ -74,63 +74,64 @@ namespace GeoPartial_RecommenderSystem
             this.map.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.map.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.map.ShowTileGridLines = false;
-            this.map.Size = new System.Drawing.Size(726, 596);
+            this.map.Size = new System.Drawing.Size(742, 596);
             this.map.TabIndex = 1;
             this.map.Zoom = 0D;
             this.map.Load += new System.EventHandler(this.Map_Load);
             // 
-            // textLat
+            // textEventName
             // 
-            this.textLat.Location = new System.Drawing.Point(841, 125);
-            this.textLat.Name = "textLat";
-            this.textLat.Size = new System.Drawing.Size(116, 22);
-            this.textLat.TabIndex = 2;
+            this.textEventName.Location = new System.Drawing.Point(760, 72);
+            this.textEventName.Name = "textEventName";
+            this.textEventName.Size = new System.Drawing.Size(178, 22);
+            this.textEventName.TabIndex = 3;
             // 
-            // textLong
+            // eventName
             // 
-            this.textLong.Location = new System.Drawing.Point(841, 211);
-            this.textLong.Name = "textLong";
-            this.textLong.Size = new System.Drawing.Size(116, 22);
-            this.textLong.TabIndex = 3;
+            this.eventName.AutoSize = true;
+            this.eventName.Location = new System.Drawing.Point(757, 39);
+            this.eventName.Name = "eventName";
+            this.eventName.Size = new System.Drawing.Size(89, 17);
+            this.eventName.TabIndex = 5;
+            this.eventName.Text = "Event Name:";
+            this.eventName.Click += new System.EventHandler(this.eventName_Click);
             // 
-            // latitude
+            // btnAddEvent
             // 
-            this.latitude.AutoSize = true;
-            this.latitude.Location = new System.Drawing.Point(746, 128);
-            this.latitude.Name = "latitude";
-            this.latitude.Size = new System.Drawing.Size(59, 17);
-            this.latitude.TabIndex = 4;
-            this.latitude.Text = "Latitude";
+            this.btnAddEvent.Location = new System.Drawing.Point(760, 179);
+            this.btnAddEvent.Name = "btnAddEvent";
+            this.btnAddEvent.Size = new System.Drawing.Size(109, 44);
+            this.btnAddEvent.TabIndex = 6;
+            this.btnAddEvent.Text = "Add Event";
+            this.btnAddEvent.UseVisualStyleBackColor = true;
+            this.btnAddEvent.Click += new System.EventHandler(this.BtnSearch_Click);
             // 
-            // longitude
+            // dateTimePicker
             // 
-            this.longitude.AutoSize = true;
-            this.longitude.Location = new System.Drawing.Point(746, 214);
-            this.longitude.Name = "longitude";
-            this.longitude.Size = new System.Drawing.Size(71, 17);
-            this.longitude.TabIndex = 5;
-            this.longitude.Text = "Longitude";
+            this.dateTimePicker.Location = new System.Drawing.Point(760, 122);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(220, 22);
+            this.dateTimePicker.TabIndex = 8;
             // 
-            // btnSearch
+            // resetField
             // 
-            this.btnSearch.Location = new System.Drawing.Point(783, 293);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(147, 39);
-            this.btnSearch.TabIndex = 6;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
+            this.resetField.Location = new System.Drawing.Point(875, 179);
+            this.resetField.Name = "resetField";
+            this.resetField.Size = new System.Drawing.Size(105, 44);
+            this.resetField.TabIndex = 9;
+            this.resetField.Text = "Reset";
+            this.resetField.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(992, 596);
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.longitude);
-            this.Controls.Add(this.latitude);
-            this.Controls.Add(this.textLong);
-            this.Controls.Add(this.textLat);
+            this.Controls.Add(this.resetField);
+            this.Controls.Add(this.dateTimePicker);
+            this.Controls.Add(this.btnAddEvent);
+            this.Controls.Add(this.eventName);
+            this.Controls.Add(this.textEventName);
             this.Controls.Add(this.map);
             this.Controls.Add(this.splitter1);
             this.Name = "Form1";
@@ -149,11 +150,11 @@ namespace GeoPartial_RecommenderSystem
 
         private System.Windows.Forms.Splitter splitter1;
         private GMap.NET.WindowsForms.GMapControl map;
-        private System.Windows.Forms.TextBox textLat;
-        private System.Windows.Forms.TextBox textLong;
-        private System.Windows.Forms.Label latitude;
-        private System.Windows.Forms.Label longitude;
-        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.TextBox textEventName;
+        private System.Windows.Forms.Label eventName;
+        private System.Windows.Forms.Button btnAddEvent;
+        private DateTimePicker dateTimePicker;
+        private Button resetField;
     }
 }
 
