@@ -62,8 +62,8 @@ namespace GeoPartial_RecommenderSystem
             this.map.LevelsKeepInMemory = 5;
             this.map.Location = new System.Drawing.Point(0, 0);
             this.map.MarkersEnabled = true;
-            this.map.MaxZoom = 2;
-            this.map.MinZoom = 2;
+            this.map.MaxZoom = 18;
+            this.map.MinZoom = 0;
             this.map.MouseWheelZoomEnabled = true;
             this.map.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
             this.map.Name = "map";
@@ -73,10 +73,10 @@ namespace GeoPartial_RecommenderSystem
             this.map.RoutesEnabled = true;
             this.map.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.map.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
-            this.map.ShowTileGridLines = false;
+            this.map.ShowTileGridLines = true;
             this.map.Size = new System.Drawing.Size(742, 596);
             this.map.TabIndex = 1;
-            this.map.Zoom = 0D;
+            this.map.Zoom = 12D;
             this.map.Load += new System.EventHandler(this.Map_Load);
             // 
             // textEventName

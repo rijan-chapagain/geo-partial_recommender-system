@@ -2,11 +2,14 @@
 {
     using GMap.NET;
     using GMap.NET.MapProviders;
+    using GMap.NET.WindowsForms;
+    using GMap.NET.WindowsForms.Markers;
     using System;
     using System.Windows.Forms;
 
     public partial class Form1 : Form
     {
+        Utilities util = new Utilities();
         public Form1()
         {
             InitializeComponent();
@@ -14,16 +17,17 @@
             // handle drag on map
             map.DragButton = MouseButtons.Left;
 
-
+/*            map.MapProvider = GMapProviders.GoogleMap;
+*/            // Initialize map:
             map.MapProvider = GMapProviders.GoogleMap;
+            GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.ServerOnly;
+
             double latitude = Convert.ToDouble(-31.953512);
             double longitude = Convert.ToDouble(115.857048);
-
             map.Position = new PointLatLng(latitude, longitude);
-            // adjust Zoom level
-            map.MinZoom = 0;
-            map.MaxZoom = 18;
-            map.Zoom = 12;
+
+
+            map.Overlays.Add(util.Marker());
         }
 
         private void BtnSearch_Click(object sender, EventArgs e)
