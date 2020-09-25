@@ -6,8 +6,8 @@
 			<lle:tweet>
 				<lle:text>This is some tweet in my day</lle:text>
 				<lle:location>
-					<lle:lat>999</lle:lat>
-					<lle:long>999</lle:long>
+					<lle:lat>-31.92512</lle:lat>
+					<lle:long>115.8193442</lle:long>
 				</lle:location>
 				<lle:datetimestamp>datetimestamp</lle:datetimestamp>
 			</lle:tweet>
@@ -17,8 +17,8 @@
 			<lle:facebook-status-update>
 				<lle:text>This is some status update in my day</lle:text>
 				<lle:location>
-					<lle:lat>999</lle:lat>
-					<lle:long>999</lle:long>
+					<lle:lat>-31.959012</lle:lat>
+					<lle:long>115.812239</lle:long>
 				</lle:location>
 				<lle:datetimestamp>datetimestamp</lle:datetimestamp>
 			</lle:facebook-status-update>
@@ -28,8 +28,8 @@
 			<lle:photo>
 				<lle:filepath>/photos/image.jpg</lle:filepath>
 				<lle:location>
-					<lle:lat>999</lle:lat>
-					<lle:long>999</lle:long>
+					<lle:lat>-31.953512</lle:lat>
+					<lle:long>115.819</lle:long>
 				</lle:location>
 			</lle:photo>
 		</lle:Event>
@@ -38,8 +38,8 @@
 			<lle:video>
 				<lle:filepath>/videos/film.mp4</lle:filepath>
 				<lle:location>
-					<lle:lat>999</lle:lat>
-					<lle:long>999</lle:long>
+					<lle:lat>-31.953092</lle:lat>
+					<lle:long>115.8190901</lle:long>
 				</lle:location>
 				<lle:start-time>
 					<lle:datetimestamp>datetimestamp</lle:datetimestamp>
@@ -64,43 +64,43 @@
 		</lle:Event>
 		<lle:Event>
 			<lle:eventid>ID6</lle:eventid>
-			<lle:tweet>
-				<lle:text>This is some tweet in my day</lle:text>
+			<lle:linkedin-status>
+				<lle:text>This is my linkedin-status about my promotion</lle:text>
 				<lle:location>
-					<lle:lat>999</lle:lat>
-					<lle:long>999</lle:long>
+					<lle:lat>-31.913512</lle:lat>
+					<lle:long>115.8190901</lle:long>
 				</lle:location>
 				<lle:datetimestamp>datetimestamp</lle:datetimestamp>
-			</lle:tweet>
+			</lle:linkedin-status>
 		</lle:Event>
 		<lle:Event>
 			<lle:eventid>ID7</lle:eventid>
-			<lle:facebook-status-update>
-				<lle:text>This is some status update in my day</lle:text>
+			<lle:github_commit>
+				<lle:text>Initial commit</lle:text>
 				<lle:location>
-					<lle:lat>999</lle:lat>
-					<lle:long>999</lle:long>
+					<lle:lat>-31.9531312</lle:lat>
+					<lle:long>115.857049</lle:long>
 				</lle:location>
 				<lle:datetimestamp>datetimestamp</lle:datetimestamp>
-			</lle:facebook-status-update>
+			</lle:github_commit>
 		</lle:Event>
 		<lle:Event>
 			<lle:eventid>ID8</lle:eventid>
-			<lle:photo>
+			<lle:barbeque>
 				<lle:filepath>/photos/image.jpg</lle:filepath>
 				<lle:location>
-					<lle:lat>999</lle:lat>
-					<lle:long>999</lle:long>
+					<lle:lat>-31.9253512</lle:lat>
+					<lle:long>115.857055</lle:long>
 				</lle:location>
-			</lle:photo>
+			</lle:barbeque>
 		</lle:Event>
 		<lle:Event>
 			<lle:eventid>ID9</lle:eventid>
 			<lle:video>
 				<lle:filepath>/videos/film.mp4</lle:filepath>
 				<lle:location>
-					<lle:lat>999</lle:lat>
-					<lle:long>999</lle:long>
+					<lle:lat>-31.9953512</lle:lat>
+					<lle:long>115.857048</lle:long>
 				</lle:location>
 				<lle:start-time>
 					<lle:datetimestamp>datetimestamp</lle:datetimestamp>
@@ -128,30 +128,30 @@
 			<lle:tweet>
 				<lle:text>This is some tweet in my day</lle:text>
 				<lle:location>
-					<lle:lat>999</lle:lat>
-					<lle:long>999</lle:long>
+					<lle:lat>-31.953512</lle:lat>
+					<lle:long>115.857048</lle:long>
 				</lle:location>
 				<lle:datetimestamp>datetimestamp</lle:datetimestamp>
 			</lle:tweet>
 		</lle:Event>
 		<lle:Event>
 			<lle:eventid>ID12</lle:eventid>
-			<lle:facebook-status-update>
-				<lle:text>This is some status update in my day</lle:text>
+			<lle:linkedin-status>
+				<lle:text>This status updated on my first job.</lle:text>
 				<lle:location>
-					<lle:lat>999</lle:lat>
-					<lle:long>999</lle:long>
+					<lle:lat>-31.953512</lle:lat>
+					<lle:long>115.857048</lle:long>
 				</lle:location>
 				<lle:datetimestamp>datetimestamp</lle:datetimestamp>
-			</lle:facebook-status-update>
+			</lle:linkedin-status>
 		</lle:Event>
 		<lle:Event>
 			<lle:eventid>ID13</lle:eventid>
 			<lle:photo>
 				<lle:filepath>/photos/image.jpg</lle:filepath>
 				<lle:location>
-					<lle:lat>999</lle:lat>
-					<lle:long>999</lle:long>
+					<lle:lat>-31.953512</lle:lat>
+					<lle:long>115.8123442</lle:long>
 				</lle:location>
 			</lle:photo>
 		</lle:Event>
@@ -160,8 +160,8 @@
 			<lle:video>
 				<lle:filepath>/videos/film.mp4</lle:filepath>
 				<lle:location>
-					<lle:lat>999</lle:lat>
-					<lle:long>999</lle:long>
+					<lle:lat>-31.953512</lle:lat>
+					<lle:long>115.8123442</lle:long>
 				</lle:location>
 				<lle:start-time>
 					<lle:datetimestamp>datetimestamp</lle:datetimestamp>
@@ -189,8 +189,8 @@
 			<lle:tweet>
 				<lle:text>This is some tweet in my day</lle:text>
 				<lle:location>
-					<lle:lat>999</lle:lat>
-					<lle:long>999</lle:long>
+					<lle:lat>-31.953512</lle:lat>
+					<lle:long>116.8123442</lle:long>
 				</lle:location>
 				<lle:datetimestamp>datetimestamp</lle:datetimestamp>
 			</lle:tweet>
@@ -200,8 +200,8 @@
 			<lle:facebook-status-update>
 				<lle:text>This is some status update in my day</lle:text>
 				<lle:location>
-					<lle:lat>999</lle:lat>
-					<lle:long>999</lle:long>
+					<lle:lat>-31.953512</lle:lat>
+					<lle:long>116.8123442</lle:long>
 				</lle:location>
 				<lle:datetimestamp>datetimestamp</lle:datetimestamp>
 			</lle:facebook-status-update>
@@ -211,8 +211,8 @@
 			<lle:photo>
 				<lle:filepath>/photos/image.jpg</lle:filepath>
 				<lle:location>
-					<lle:lat>999</lle:lat>
-					<lle:long>999</lle:long>
+					<lle:lat>-31.953512</lle:lat>
+					<lle:long>115.8193442</lle:long>
 				</lle:location>
 			</lle:photo>
 		</lle:Event>
@@ -221,8 +221,8 @@
 			<lle:video>
 				<lle:filepath>/videos/film.mp4</lle:filepath>
 				<lle:location>
-					<lle:lat>999</lle:lat>
-					<lle:long>999</lle:long>
+					<lle:lat>-31.953512</lle:lat>
+					<lle:long>115.8193442</lle:long>
 				</lle:location>
 				<lle:start-time>
 					<lle:datetimestamp>datetimestamp</lle:datetimestamp>
@@ -246,72 +246,55 @@
 			</lle:tracklog>
 		</lle:Event>
 		<lle:Event>
-			<lle:eventid>ID21</lle:eventid>
-			<lle:tracklog>
-				<lle:filepath>/tracklog/track.gpx</lle:filepath>
-				<lle:data>.....</lle:data>
-				<lle:start-time>
-					<lle:datetimestamp>datetimestamp</lle:datetimestamp>
-				</lle:start-time>
-				<lle:end-time>
-					<lle:datetimestamp>datetimestamp</lle:datetimestamp>
-				</lle:end-time>
-			</lle:tracklog>
+			<lle:eventid>ID121</lle:eventid>
+			<lle:tweet>
+				<lle:text>This is some tweet in my day</lle:text>
+				<lle:location>
+					<lle:lat>-31.953512</lle:lat>
+					<lle:long>116.8123442</lle:long>
+				</lle:location>
+				<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+			</lle:tweet>
 		</lle:Event>
 		<lle:Event>
 			<lle:eventid>ID22</lle:eventid>
-			<lle:tracklog>
-				<lle:filepath>/tracklog/track.gpx</lle:filepath>
-				<lle:data>.....</lle:data>
-				<lle:start-time>
-					<lle:datetimestamp>datetimestamp</lle:datetimestamp>
-				</lle:start-time>
-				<lle:end-time>
-					<lle:datetimestamp>datetimestamp</lle:datetimestamp>
-				</lle:end-time>
-			</lle:tracklog>
+			<lle:facebook-status-update>
+				<lle:text>This is some status update in my day</lle:text>
+				<lle:location>
+					<lle:lat>-31.953512</lle:lat>
+					<lle:long>116.8123442</lle:long>
+				</lle:location>
+				<lle:datetimestamp>datetimestamp</lle:datetimestamp>
+			</lle:facebook-status-update>
 		</lle:Event>
 		<lle:Event>
 			<lle:eventid>ID23</lle:eventid>
-			<lle:tracklog>
-				<lle:filepath>/tracklog/track.gpx</lle:filepath>
-				<lle:data>.....</lle:data>
-				<lle:start-time>
-					<lle:datetimestamp>datetimestamp</lle:datetimestamp>
-				</lle:start-time>
-				<lle:end-time>
-					<lle:datetimestamp>datetimestamp</lle:datetimestamp>
-				</lle:end-time>
-			</lle:tracklog>
+			<lle:photo>
+				<lle:filepath>/photos/image.jpg</lle:filepath>
+				<lle:location>
+					<lle:lat>-31.953512</lle:lat>
+					<lle:long>115.8193442</lle:long>
+				</lle:location>
+			</lle:photo>
 		</lle:Event>
 		<lle:Event>
 			<lle:eventid>ID24</lle:eventid>
-			<lle:tracklog>
-				<lle:filepath>/tracklog/track.gpx</lle:filepath>
-				<lle:data>.....</lle:data>
+			<lle:video>
+				<lle:filepath>/videos/film.mp4</lle:filepath>
+				<lle:location>
+					<lle:lat>-31.953512</lle:lat>
+					<lle:long>115.8193442</lle:long>
+				</lle:location>
 				<lle:start-time>
 					<lle:datetimestamp>datetimestamp</lle:datetimestamp>
 				</lle:start-time>
 				<lle:end-time>
 					<lle:datetimestamp>datetimestamp</lle:datetimestamp>
 				</lle:end-time>
-			</lle:tracklog>
+			</lle:video>
 		</lle:Event>
 		<lle:Event>
 			<lle:eventid>ID25</lle:eventid>
-			<lle:tracklog>
-				<lle:filepath>/tracklog/track.gpx</lle:filepath>
-				<lle:data>.....</lle:data>
-				<lle:start-time>
-					<lle:datetimestamp>datetimestamp</lle:datetimestamp>
-				</lle:start-time>
-				<lle:end-time>
-					<lle:datetimestamp>datetimestamp</lle:datetimestamp>
-				</lle:end-time>
-			</lle:tracklog>
-		</lle:Event>
-		<lle:Event>
-			<lle:eventid>ID26</lle:eventid>
 			<lle:tracklog>
 				<lle:filepath>/tracklog/track.gpx</lle:filepath>
 				<lle:data>.....</lle:data>

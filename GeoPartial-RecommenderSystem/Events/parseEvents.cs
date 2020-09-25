@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using System.Xml.Linq;
 
 namespace GeoPartial_RecommenderSystem.Events
@@ -11,19 +13,23 @@ namespace GeoPartial_RecommenderSystem.Events
     class ParseEvents
     {
 
-        public void LoadData()
+        public static void LoadData()
         {
             // Load the XML file from our project directory containing the Events
-            var filename = "Lifelog-events.xml";
-            var currentDirectory = Directory.GetCurrentDirectory();
-            var purchaseOrderFilepath = Path.Combine(currentDirectory, filename);
+            // Specify the xml file path
+            var filename = "..\\..\\Resources\\Lifelog-events.xml";
 
-            XElement purchaseOrder = XElement.Load(purchaseOrderFilepath);
+            // Define XML namespace
+            XNamespace lle = "http://www.xyz.org/lifelogevents";
+            
+            XElement eventLog = XElement.Load(filename);
+            IEnumerable<XElement> xElements = eventLog.Elements();
 
-            IEnumerable<string> partNos = from item in purchaseOrder.Descendants("Item")
-                                          select (string)item.Attribute("PartNumber");
-            Console.WriteLine(partNos);
+
+            Console.WriteLine("load data********************");
+            Debug.WriteLine("Data loaded from SOAP:   ", xElements);
+
         }
-       
+
     }
 }

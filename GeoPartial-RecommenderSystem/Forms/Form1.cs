@@ -1,5 +1,6 @@
 ﻿namespace GeoPartial_RecommenderSystem
 {
+    using GeoPartial_RecommenderSystem.Forms;
     using GMap.NET;
     using GMap.NET.MapProviders;
     using GMap.NET.WindowsForms;
@@ -16,9 +17,6 @@
 
             // handle drag on map
             map.DragButton = MouseButtons.Left;
-
-/*            map.MapProvider = GMapProviders.GoogleMap;
-*/            // Initialize map:
             map.MapProvider = GMapProviders.GoogleMap;
             GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.ServerOnly;
 
@@ -26,41 +24,23 @@
             double longitude = Convert.ToDouble(115.857048);
             map.Position = new PointLatLng(latitude, longitude);
 
-
             map.Overlays.Add(util.Marker());
-        }
-
-        private void BtnSearch_Click(object sender, EventArgs e)
-        {
-            /*double latitude = Convert.ToDouble(textLat.Text);
-            double longitude = Convert.ToDouble(textLong.Text);*/
-        }
-
-        private int X;
-        private int Y;
-
-        private void Map_Load_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(string.Format("X: {0} Y: {1}", X, Y));
-        }
-
-        private void Map_Load_MouseUp(object sender, MouseEventArgs e)
-        {
-            X = e.X;
-            Y = e.Y;
         }
 
         private void Map_Load(object sender, EventArgs e)
         {
-        }
+/*            MessageBox.Show(string.Format("X: {0} Y: {1}", X, Y));
+*/        }
 
-        private void Splitter1_SplitterMoved(object sender, SplitterEventArgs e)
+        private void Map_MouseClick(object sender, MouseEventArgs e)
         {
+            var mouseX = e.X;
+            var mouseY = e.Y;
+            mouseX = mouseX - 15;
+            mouseY = mouseY - 37;
+            Form form = new AddEventForm(mouseX, mouseY);
+            form.Show();
         }
 
-        private void eventName_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

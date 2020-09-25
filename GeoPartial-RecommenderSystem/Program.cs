@@ -15,10 +15,9 @@ namespace GeoPartial_RecommenderSystem
         [STAThread]
         static void Main()
         {
-            ParseEvents events = new ParseEvents();
 
-            events.LoadData();
-            Application.EnableVisualStyles();
+/*            ParseEvents.LoadData();
+*/            Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
