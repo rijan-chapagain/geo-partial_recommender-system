@@ -90,17 +90,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Events\AddEvents.cs" />
+    <Compile Include="Events\Facebook.cs" />
     <Compile Include="Events\LatLong.cs" />
-    <Compile Include="Events\EventLog\EmptyEvent.cs" />
     <Compile Include="Events\Event.cs" />
-    <Compile Include="Events\EventLog\EventLogSchema.cs" />
-    <Compile Include="Events\EventLog\FacebookEvent.cs" />
-    <Compile Include="Events\EventLog\PhotoEvent.cs" />
-    <Compile Include="Events\EventLog\TrackEvent.cs" />
-    <Compile Include="Events\EventLog\TwitterEvent.cs" />
-    <Compile Include="Events\EventLog\VideoEvent.cs" />
-    <Compile Include="Events\IEvents.cs" />
+    <Compile Include="Events\IEvent.cs" />
     <Compile Include="Events\ParseEvents.cs" />
+    <Compile Include="Events\Photo.cs" />
+    <Compile Include="Events\Tweet.cs" />
     <Compile Include="Forms\AddEventForm.cs">
       <SubType>Form</SubType>
     </Compile>

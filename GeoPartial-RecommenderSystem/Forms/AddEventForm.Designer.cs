@@ -54,17 +54,17 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.rbFacebook = new System.Windows.Forms.RadioButton();
-            this.rbPhoto = new System.Windows.Forms.RadioButton();
-            this.rbVideo = new System.Windows.Forms.RadioButton();
-            this.rbTracklog = new System.Windows.Forms.RadioButton();
-            this.rbTweet = new System.Windows.Forms.RadioButton();
             this.tweetPan = new System.Windows.Forms.Panel();
             this.tweetDate = new System.Windows.Forms.TextBox();
             this.tweetText = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.addBtn = new System.Windows.Forms.Button();
+            this.rbTweet = new System.Windows.Forms.RadioButton();
+            this.rbTracklog = new System.Windows.Forms.RadioButton();
+            this.rbVideo = new System.Windows.Forms.RadioButton();
+            this.rbPhoto = new System.Windows.Forms.RadioButton();
+            this.rbFacebook = new System.Windows.Forms.RadioButton();
             this.eventType = new System.Windows.Forms.GroupBox();
             this.tracklogPan.SuspendLayout();
             this.photoPan.SuspendLayout();
@@ -328,67 +328,10 @@
             this.label1.Location = new System.Drawing.Point(77, 58);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(203, 21);
+            this.label1.Size = new System.Drawing.Size(162, 17);
             this.label1.TabIndex = 24;
             this.label1.Text = "Input Your details below:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // rbFacebook
-            // 
-            this.rbFacebook.AutoSize = true;
-            this.rbFacebook.Location = new System.Drawing.Point(36, 63);
-            this.rbFacebook.Margin = new System.Windows.Forms.Padding(4);
-            this.rbFacebook.Name = "rbFacebook";
-            this.rbFacebook.Size = new System.Drawing.Size(91, 21);
-            this.rbFacebook.TabIndex = 22;
-            this.rbFacebook.Text = "Facebook";
-            this.rbFacebook.UseVisualStyleBackColor = true;
-            // 
-            // rbPhoto
-            // 
-            this.rbPhoto.AutoSize = true;
-            this.rbPhoto.Location = new System.Drawing.Point(36, 92);
-            this.rbPhoto.Margin = new System.Windows.Forms.Padding(4);
-            this.rbPhoto.Name = "rbPhoto";
-            this.rbPhoto.Size = new System.Drawing.Size(66, 21);
-            this.rbPhoto.TabIndex = 20;
-            this.rbPhoto.Text = "Photo";
-            this.rbPhoto.UseVisualStyleBackColor = true;
-            // 
-            // rbVideo
-            // 
-            this.rbVideo.AutoSize = true;
-            this.rbVideo.Location = new System.Drawing.Point(36, 120);
-            this.rbVideo.Margin = new System.Windows.Forms.Padding(4);
-            this.rbVideo.Name = "rbVideo";
-            this.rbVideo.Size = new System.Drawing.Size(65, 21);
-            this.rbVideo.TabIndex = 19;
-            this.rbVideo.Text = "Video";
-            this.rbVideo.UseVisualStyleBackColor = true;
-            // 
-            // rbTracklog
-            // 
-            this.rbTracklog.AutoSize = true;
-            this.rbTracklog.Location = new System.Drawing.Point(36, 148);
-            this.rbTracklog.Margin = new System.Windows.Forms.Padding(4);
-            this.rbTracklog.Name = "rbTracklog";
-            this.rbTracklog.Size = new System.Drawing.Size(84, 21);
-            this.rbTracklog.TabIndex = 18;
-            this.rbTracklog.Text = "Tracklog";
-            this.rbTracklog.UseVisualStyleBackColor = true;
-            // 
-            // rbTweet
-            // 
-            this.rbTweet.AutoSize = true;
-            this.rbTweet.Checked = true;
-            this.rbTweet.Location = new System.Drawing.Point(36, 35);
-            this.rbTweet.Margin = new System.Windows.Forms.Padding(4);
-            this.rbTweet.Name = "rbTweet";
-            this.rbTweet.Size = new System.Drawing.Size(67, 21);
-            this.rbTweet.TabIndex = 17;
-            this.rbTweet.TabStop = true;
-            this.rbTweet.Text = "Tweet";
-            this.rbTweet.UseVisualStyleBackColor = true;
             // 
             // tweetPan
             // 
@@ -447,6 +390,69 @@
             this.addBtn.TabIndex = 15;
             this.addBtn.Text = "Add Event";
             this.addBtn.UseVisualStyleBackColor = true;
+            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
+            // 
+            // rbTweet
+            // 
+            this.rbTweet.AutoSize = true;
+            this.rbTweet.Checked = true;
+            this.rbTweet.Location = new System.Drawing.Point(36, 35);
+            this.rbTweet.Margin = new System.Windows.Forms.Padding(4);
+            this.rbTweet.Name = "rbTweet";
+            this.rbTweet.Size = new System.Drawing.Size(67, 21);
+            this.rbTweet.TabIndex = 17;
+            this.rbTweet.TabStop = true;
+            this.rbTweet.Text = "Tweet";
+            this.rbTweet.UseVisualStyleBackColor = true;
+            this.rbTweet.CheckedChanged += new System.EventHandler(this.rbTweet_CheckedChanged);
+            // 
+            // rbTracklog
+            // 
+            this.rbTracklog.AutoSize = true;
+            this.rbTracklog.Location = new System.Drawing.Point(36, 148);
+            this.rbTracklog.Margin = new System.Windows.Forms.Padding(4);
+            this.rbTracklog.Name = "rbTracklog";
+            this.rbTracklog.Size = new System.Drawing.Size(84, 21);
+            this.rbTracklog.TabIndex = 18;
+            this.rbTracklog.Text = "Tracklog";
+            this.rbTracklog.UseVisualStyleBackColor = true;
+            this.rbTracklog.CheckedChanged += new System.EventHandler(this.rbTracklog_CheckedChanged);
+            // 
+            // rbVideo
+            // 
+            this.rbVideo.AutoSize = true;
+            this.rbVideo.Location = new System.Drawing.Point(36, 120);
+            this.rbVideo.Margin = new System.Windows.Forms.Padding(4);
+            this.rbVideo.Name = "rbVideo";
+            this.rbVideo.Size = new System.Drawing.Size(65, 21);
+            this.rbVideo.TabIndex = 19;
+            this.rbVideo.Text = "Video";
+            this.rbVideo.UseVisualStyleBackColor = true;
+            this.rbVideo.CheckedChanged += new System.EventHandler(this.rbVideo_CheckedChanged);
+            // 
+            // rbPhoto
+            // 
+            this.rbPhoto.AutoSize = true;
+            this.rbPhoto.Location = new System.Drawing.Point(36, 92);
+            this.rbPhoto.Margin = new System.Windows.Forms.Padding(4);
+            this.rbPhoto.Name = "rbPhoto";
+            this.rbPhoto.Size = new System.Drawing.Size(66, 21);
+            this.rbPhoto.TabIndex = 20;
+            this.rbPhoto.Text = "Photo";
+            this.rbPhoto.UseVisualStyleBackColor = true;
+            this.rbPhoto.CheckedChanged += new System.EventHandler(this.rbPhoto_CheckedChanged);
+            // 
+            // rbFacebook
+            // 
+            this.rbFacebook.AutoSize = true;
+            this.rbFacebook.Location = new System.Drawing.Point(36, 63);
+            this.rbFacebook.Margin = new System.Windows.Forms.Padding(4);
+            this.rbFacebook.Name = "rbFacebook";
+            this.rbFacebook.Size = new System.Drawing.Size(91, 21);
+            this.rbFacebook.TabIndex = 22;
+            this.rbFacebook.Text = "Facebook";
+            this.rbFacebook.UseVisualStyleBackColor = true;
+            this.rbFacebook.CheckedChanged += new System.EventHandler(this.rbFacebook_CheckedChanged);
             // 
             // eventType
             // 
@@ -527,17 +533,17 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton rbFacebook;
-        private System.Windows.Forms.RadioButton rbPhoto;
-        private System.Windows.Forms.RadioButton rbVideo;
-        private System.Windows.Forms.RadioButton rbTracklog;
-        private System.Windows.Forms.RadioButton rbTweet;
         private System.Windows.Forms.Panel tweetPan;
         private System.Windows.Forms.TextBox tweetDate;
         private System.Windows.Forms.TextBox tweetText;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button addBtn;
+        private System.Windows.Forms.RadioButton rbTweet;
+        private System.Windows.Forms.RadioButton rbTracklog;
+        private System.Windows.Forms.RadioButton rbVideo;
+        private System.Windows.Forms.RadioButton rbPhoto;
+        private System.Windows.Forms.RadioButton rbFacebook;
         private System.Windows.Forms.GroupBox eventType;
     }
 }

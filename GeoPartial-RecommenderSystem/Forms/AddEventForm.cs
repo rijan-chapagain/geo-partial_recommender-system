@@ -15,7 +15,7 @@ namespace GeoPartial_RecommenderSystem.Forms
     {
         private int mouseX;
         private int mouseY;
-        EventLogSchema.EventTypess eventTypes;
+        EventLogSchema.EventTypes eventTypes;
         public AddEventForm()
         {
             InitializeComponent();
@@ -43,33 +43,33 @@ namespace GeoPartial_RecommenderSystem.Forms
                 switch (eventTypes)
                 {
                     case EventLogSchema.EventTypes.Twitter:
-                        addNewEvent.CustomProperties["Text"] = mainGroupBox.Controls.Find("text", true).Single().Text;
+                        addNewEvent.EventProps["Text"] = mainGroupBox.Controls.Find("text", true).Single().Text;
                         mainGroupBox.Controls.Find("text", true).Single().Text = "";
                         addNewEvent.Location = LatLong;
                         break;
                     case EventLogSchema.EventTypes.Facebook:
 
-                        addNewEvent.CustomProperties["Text"] = mainGroupBox.Controls.Find("text", true).Single().Text;
+                        addNewEvent.EventProps["Text"] = mainGroupBox.Controls.Find("text", true).Single().Text;
                         addNewEvent.Location = LatLong;
                         mainGroupBox.Controls.Find("text", true).Single().Text = "";
                         break;
                     case EventLogSchema.EventTypes.Photo:
 
-                        addNewEvent.CustomProperties["Filepath"] = mainGroupBox.Controls.Find("imageLabel", true).Single().Text;
+                        addNewEvent.EventProps["Filepath"] = mainGroupBox.Controls.Find("imageLabel", true).Single().Text;
                         mainGroupBox.Controls.Find("imageLabel", true).Single().Text = "";
                         addNewEvent.Location = LatLong;
                         break;
                     case EventLogSchema.EventTypes.Video:
 
-                        addNewEvent.CustomProperties["Filepath"] = mainGroupBox.Controls.Find("videoLabel", true).Single().Text;
+                        addNewEvent.EventProps["Filepath"] = mainGroupBox.Controls.Find("videoLabel", true).Single().Text;
                         mainGroupBox.Controls.Find("videoLabel", true).Single().Text = "";
                         addNewEvent.Location = LatLong;
                         break;
                     case EventLogSchema.EventTypes.TrackLog:
 
-                        addNewEvent.CustomProperties["Filepath"] = mainGroupBox.Controls.Find("tracklogLabel", true).Single().Text;
+                        addNewEvent.EventProps["Filepath"] = mainGroupBox.Controls.Find("tracklogLabel", true).Single().Text;
                         mainGroupBox.Controls.Find("tracklogLabel", true).Single().Text = "";
-                        addNewEvent.Location = XMLTracklogLoader.GetStartCordinatesOfTrack(addNewEvent.CustomProperties["Filepath"].ToString());
+                        addNewEvent.Location = XMLTracklogLoader.GetStartCordinatesOfTrack(addNewEvent.EventProps["Filepath"].ToString());
                         break;
                     default:
                         return;
@@ -118,6 +118,36 @@ namespace GeoPartial_RecommenderSystem.Forms
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbFacebook_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbTweet_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbPhoto_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbVideo_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbTracklog_CheckedChanged(object sender, EventArgs e)
         {
 
         }
